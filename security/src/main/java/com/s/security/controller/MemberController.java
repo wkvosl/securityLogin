@@ -2,6 +2,8 @@ package com.s.security.controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -47,7 +49,7 @@ public class MemberController {
 		return "login";
 	}
 	
-	
+//////////////////////////////////////////
 	@GetMapping("/all")
 	@ResponseBody
 	public List<Member> all() {
